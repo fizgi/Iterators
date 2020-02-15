@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """ Implement a test class to test the methods
-    counting vowels, finding the last occurance and
+    counting vowels, finding the last occurence and
     a generator without using built-in enumerate()
 
     author: Fatih IZGI

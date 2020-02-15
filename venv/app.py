@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """ This program includes some iterating methods such as
-    counting vowels, finding the last occurance and
+    counting vowels, finding the last occurence and
     a generator without using built-in enumerate()
 
     author: Fatih IZGI
