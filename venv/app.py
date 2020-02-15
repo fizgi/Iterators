@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-""" This program takes the first and last name from the user
-    and prints a greeting message.
+""" This program includes some iterating methods such as
+    counting vowels, finding the last occurance and
+    a generator without using built-in enumerate()
 
     author: Fatih IZGI
     date: 15-Feb-2020
@@ -11,8 +12,6 @@ import random
 import unittest
 from typing import Any, List, Optional, Sequence, Iterator
 
-
-# PART 1
 
 def count_vowels(s: str) -> int:
     """ return the number of vowels in the string s """
@@ -26,7 +25,6 @@ def count_vowels(s: str) -> int:
 
     return vowel_count
 
-# PART 2
 
 def find_last(target: Any, seq: Sequence[Any]) -> Optional[int]:
     """ return the offset from 0 of the last occurrence of target in seq """
@@ -47,26 +45,10 @@ def find_last(target: Any, seq: Sequence[Any]) -> Optional[int]:
 
     return index
 
-# PART 3 is Fraction.simplify()
 
-# PART 4
 def my_enumerate(seq: Sequence[Any]) -> Iterator[Any]:
     """ emulate the behavior of Python's built in enumerate() function.
         For each call, return a tuple with the offset from 0 and the next item
     """
     for (offset, value) in zip(range(len(seq)), seq):
         yield offset, value
-
-# PART 5
-
-def generator(min_val: int, max_val: int) -> Iterator[int]:
-    """ yield an infinite number of integers """
-    # TODO: implement me
-    yield 0  # replace with implementation
-
-
-def find_target(target: int, min_val: int = 0, max_val: int = 10, max_attempts: int = 100) -> Optional[int]:
-    """ Count the number of random values read before finding target """
-    # TODO: implement me
-
-    return None
