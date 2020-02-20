@@ -21,7 +21,7 @@ def count_vowels(s: str) -> int:
 
     for char in s_lower:
         if char in ['a', 'e', 'i', 'o', 'u']:
-            vowel_count +=1 # if the char is vowel, increase the counter
+            vowel_count += 1  # if the char is vowel, increase the counter
 
     return vowel_count
 
@@ -30,11 +30,11 @@ def find_last(target: Any, seq: Sequence[Any]) -> Optional[int]:
     """ return the offset from 0 of the last occurrence of target in seq """
 
     try:
-        index: Optional[int] = seq.index(target) # trying to find the first occurance
+        index: Optional[int] = seq.index(target) # trying to find the first occurrence
     except ValueError:  # cannot find any target in the sequence
         return None
 
-    while True: # if one occurance is found, continue to search until the last occurance
+    while True:  # if one occurrence is found, continue to search until the last occurrence
         sub_seq: Sequence[Any] = seq[index+1:]      # create a subsequence starting from the found index+1
                                                     # to search the target in the new sequence
         try:

@@ -47,7 +47,7 @@ class FindLastTest(unittest.TestCase):
 class EnumerateTest(unittest.TestCase):
     def test_enumerate_list(self) -> None:
         """ test my_enumerate by storing the results in a list """
-        self.assertTrue(list(my_enumerate([0,1,2,3,4,5])) == list(enumerate([0,1,2,3,4,5])))
+        self.assertTrue(list(my_enumerate([0, 1, 2, 3, 4, 5])) == list(enumerate([0, 1, 2, 3, 4, 5])))
         self.assertTrue(list(my_enumerate("Test!")) == list(enumerate("Test!")))
 
 
